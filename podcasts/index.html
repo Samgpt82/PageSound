@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Podcast Episodes | Summeries & Sound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Summeries & Sound</div>
+        <a class="cta" href="../index.html">Back Home</a>
+    </nav>
+
+    <main class="listing-main">
+        <a class="back-link" href="../index.html#podcasts">← Back to featured episodes</a>
+        <header class="listing-header">
+            <h1>All Podcast Episodes</h1>
+            <p>Browse every audio drop in one place. Duplicate a card below each time you publish a new episode.</p>
+        </header>
+
+        <section class="section podcasts">
+            <div class="card-grid">
+                <article class="podcast-card">
+                    <a class="card-media" href="five-hour-workday/index.html">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="The 5-Hour Workday cover art">
+                    </a>
+                    <div class="episode-meta">Episode 12 · 18 min</div>
+                    <h3><a href="five-hour-workday/index.html" class="card-title">The 5-Hour Workday</a></h3>
+                    <p>Lessons from the most efficient teams on keeping output high with fewer hours.</p>
+                    <a href="five-hour-workday/index.html" class="text-link">Listen to episode</a>
+                </article>
+                <article class="podcast-card">
+                    <a class="card-media" href="systems-over-goals/index.html">
+                        <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80" alt="Systems Over Goals cover art">
+                    </a>
+                    <div class="episode-meta">Episode 11 · 22 min</div>
+                    <h3><a href="systems-over-goals/index.html" class="card-title">Systems Over Goals</a></h3>
+                    <p>Why building routines beats chasing milestones every time.</p>
+                    <a href="systems-over-goals/index.html" class="text-link">Listen to episode</a>
+                </article>
+                <article class="podcast-card">
+                    <a class="card-media" href="morning-momentum/index.html">
+                        <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80" alt="Morning Momentum cover art">
+                    </a>
+                    <div class="episode-meta">Episode 10 · 15 min</div>
+                    <h3><a href="morning-momentum/index.html" class="card-title">Morning Momentum</a></h3>
+                    <p>Designing mornings that set the tone for intentional work.</p>
+                    <a href="morning-momentum/index.html" class="text-link">Listen to episode</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Summeries & Sound. Curated with care.</p>
+        <div class="footer-links">
+            <a href="../index.html#summaries">Books</a>
+            <a href="../index.html#podcasts">Featured</a>
+            <a href="mailto:you@example.com">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
