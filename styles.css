@@ -380,6 +380,25 @@ main {
     color: #0d0d10;
 }
 
+.subscribe-message {
+    min-height: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    transition: color 0.2s ease;
+}
+
+.subscribe-message[data-state="loading"] {
+    color: var(--muted);
+}
+
+.subscribe-message[data-state="success"] {
+    color: #4ade80;
+}
+
+.subscribe-message[data-state="error"] {
+    color: #f87171;
+}
+
 .footnote {
     font-size: 0.8rem;
     color: var(--muted);
