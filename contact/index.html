@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Summeries & Sound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="hero hero-secondary">
+        <nav class="nav">
+            <a class="logo" href="../index.html">Summeries & Sound</a>
+            <div class="nav-links">
+                <a href="../index.html#summaries">Summaries</a>
+                <a href="../index.html#podcasts">Podcasts</a>
+                <a href="../books/index.html">Library</a>
+                <a href="../about/index.html">About</a>
+            </div>
+        </nav>
+        <div class="hero-content narrow">
+            <p class="eyebrow">Get in touch</p>
+            <h1>Let’s build your learning stack together.</h1>
+            <p class="subhead">Drop us a line if you want a custom summary series, a private audio feed, or just want to share a book you loved.</p>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-grid contact-layout">
+            <article class="contact-card">
+                <h2>Send a message</h2>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="you@email.com" required>
+
+                    <label for="topic">Topic</label>
+                    <select id="topic">
+                        <option>General question</option>
+                        <option>Collaboration</option>
+                        <option>Speaking request</option>
+                        <option>Suggestion</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="How can we help?"></textarea>
+
+                    <button type="submit" class="btn primary">Send note</button>
+                </form>
+                <p class="footnote">Prefer email? Reach us at <a href="mailto:hello@summariessound.com">hello@summariessound.com</a>.</p>
+            </article>
+
+            <article class="info-card">
+                <h2>Office hours</h2>
+                <p>We reply to most messages within two business days. For press and speaking requests, please include your timeline.</p>
+                <div class="contact-methods">
+                    <div>
+                        <span class="method-label">Team inbox</span>
+                        <a href="mailto:hello@summariessound.com">hello@summariessound.com</a>
+                    </div>
+                    <div>
+                        <span class="method-label">Partnerships</span>
+                        <a href="mailto:partners@summariessound.com">partners@summariessound.com</a>
+                    </div>
+                    <div>
+                        <span class="method-label">Studio line</span>
+                        <a href="tel:+15555551234">+1 (555) 555‑1234</a>
+                    </div>
+                </div>
+                <div class="pill-group">
+                    <span class="pill">Custom series</span>
+                    <span class="pill">Author collabs</span>
+                    <span class="pill">Learning ops</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="faq-section">
+            <h2>FAQs</h2>
+            <div class="faq-grid">
+                <article>
+                    <h3>Do you take book requests?</h3>
+                    <p>Yes. Submit titles via the form above or tag us on social. We prioritize high-impact non-fiction in productivity, leadership, and wellness.</p>
+                </article>
+                <article>
+                    <h3>Can teams get private feeds?</h3>
+                    <p>Absolutely. We create branded collections with transcripts and discussion prompts for internal enablement.</p>
+                </article>
+                <article>
+                    <h3>What gear do you use?</h3>
+                    <p>Audio is recorded on Shure SM7B mics, mixed in Logic, and mastered with Izotope. Summaries are managed in Notion + Readwise.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Summeries & Sound. Curated with care.</p>
+        <div class="footer-links">
+            <a href="../books/index.html">All book summaries</a>
+            <a href="../podcasts/index.html">All podcast episodes</a>
+            <a href="../about/index.html">About</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+

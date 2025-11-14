@@ -50,6 +50,11 @@ code {
     overflow: hidden;
 }
 
+.hero-secondary {
+    padding-bottom: 3rem;
+    background: radial-gradient(circle at top, rgba(255, 107, 74, 0.2), transparent 65%), var(--bg);
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -62,6 +67,20 @@ code {
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: var(--muted);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
 }
 
 .cta {
@@ -81,6 +100,10 @@ code {
     text-align: center;
     position: relative;
     z-index: 1;
+}
+
+.hero-content.narrow {
+    max-width: 42rem;
 }
 
 .eyebrow {
@@ -291,6 +314,19 @@ main {
     color: inherit;
 }
 
+.card-grid.trio {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.profile-card {
+    min-height: auto;
+    gap: 0.5rem;
+}
+
+.profile-card .muted {
+    color: var(--muted);
+}
+
 .pill {
     display: inline-block;
     padding: 0.35rem 0.8rem;
@@ -397,6 +433,116 @@ main {
 
 .subscribe-message[data-state="error"] {
     color: #f87171;
+}
+
+.page-main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem clamp(1.5rem, 5vw, 3.5rem) 6rem;
+    display: grid;
+    gap: 3rem;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card,
+.contact-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.info-card ul {
+    padding-left: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.info-card.highlight {
+    border-color: rgba(255, 107, 74, 0.35);
+    box-shadow: 0 30px 60px rgba(255, 107, 74, 0.1);
+}
+
+.pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.team-section {
+    display: grid;
+    gap: 2rem;
+}
+
+.team-intro {
+    max-width: 40rem;
+}
+
+.contact-layout {
+    grid-template-columns: minmax(280px, 1.2fr) minmax(240px, 1fr);
+}
+
+.contact-form {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.9rem;
+    padding: 0.9rem 1rem;
+    color: var(--text);
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-methods {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-methods a {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.method-label {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    color: var(--muted);
+    display: block;
+}
+
+.faq-section {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.faq-grid article {
+    border: 1px solid var(--card-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .footnote {
@@ -540,6 +686,11 @@ main {
 @media (max-width: 720px) {
     .hero {
         padding-bottom: 3rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .detail-grid {

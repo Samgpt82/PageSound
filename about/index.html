@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Summeries & Sound</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="hero hero-secondary">
+        <nav class="nav">
+            <a class="logo" href="../index.html">Summeries & Sound</a>
+            <div class="nav-links">
+                <a href="../index.html#summaries">Summaries</a>
+                <a href="../index.html#podcasts">Podcasts</a>
+                <a href="../books/index.html">Library</a>
+                <a href="../contact/index.html">Contact</a>
+            </div>
+        </nav>
+        <div class="hero-content narrow">
+            <p class="eyebrow">About us</p>
+            <h1>We translate big ideas into bite-sized momentum.</h1>
+            <p class="subhead">Summeries & Sound is a micro-publishing studio that curates the smartest non-fiction and the most actionable podcast episodes so you can learn faster than your to-do list grows.</p>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-grid">
+            <article class="info-card">
+                <h2>Our mission</h2>
+                <p>We’re obsessed with helping busy people keep pace with breakthrough thinking. Every summary is crafted to surface the model, the story, and the playbook so you can apply it within minutes.</p>
+                <ul>
+                    <li>Curate the most relevant titles and episodes.</li>
+                    <li>Extract the repeatable frameworks.</li>
+                    <li>Record crisp audio so you can listen on the move.</li>
+                </ul>
+            </article>
+            <article class="info-card">
+                <h2>How we work</h2>
+                <p>Each week we track new releases, reader requests, and founder/operator interviews. The editorial process blends research-grade note-taking, expert interviews, and narrative editing.</p>
+                <div class="pill-group">
+                    <span class="pill">Research sprints</span>
+                    <span class="pill">Expert edits</span>
+                    <span class="pill">Audio drops</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="team-section">
+            <div class="team-intro">
+                <h2>Meet the studio</h2>
+                <p>We’re a small, distributed team of readers, writers, and audio editors. Our backgrounds span strategy consulting, behavioral science, and radio production.</p>
+            </div>
+            <div class="card-grid trio">
+                <article class="summary-card profile-card">
+                    <h3>Maya Sandoval</h3>
+                    <p>Editor-in-chief. Former product strategist translating complex research into executive playbooks.</p>
+                    <span class="text-link muted">@maya-reads</span>
+                </article>
+                <article class="summary-card profile-card">
+                    <h3>Leo Kwan</h3>
+                    <p>Audio producer. Previously at public radio, now shaping our weekly podcast drops.</p>
+                    <span class="text-link muted">@leo-on-air</span>
+                </article>
+                <article class="summary-card profile-card">
+                    <h3>Sara Idris</h3>
+                    <p>Research lead. Synthesizes the latest leadership, productivity, and wellness research into actionable notes.</p>
+                    <span class="text-link muted">@synthesis-sara</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-grid">
+            <article class="info-card highlight">
+                <h2>Want to collaborate?</h2>
+                <p>We partner with authors, publishers, and learning teams to build custom briefings and private feeds.</p>
+                <a class="btn primary" href="../contact/index.html">Start a project</a>
+            </article>
+            <article class="info-card">
+                <h2>Community values</h2>
+                <p>People-first curation, evidence-backed insights, and creative generosity. We credit every idea and support the original authors.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Summeries & Sound. Curated with care.</p>
+        <div class="footer-links">
+            <a href="../books/index.html">All book summaries</a>
+            <a href="../podcasts/index.html">All podcast episodes</a>
+            <a href="../contact/index.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="../scripts/subscribe.js" defer></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
