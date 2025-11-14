@@ -1,0 +1,66 @@
+{
+  "podcasts": [
+    {
+      "id": "five-hour-workday",
+      "title": "The 5-Hour Workday",
+      "episodeNumber": 12,
+      "length": "18 min",
+      "coverImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+      "coverImageThumb": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
+      "description": "Lessons from the most efficient teams on keeping output high with fewer hours.",
+      "summary": "Shorter workdays can unlock outsized productivity when teams commit to ruthless prioritization and shared focus rituals. This episode distills lessons from companies that ship more in five hours than most manage in eight.",
+      "highlights": [
+        "The morning stand-up that aligns the entire team in 12 minutes.",
+        "How to structure a condensed day around the highest-leverage tasks.",
+        "What metrics to watch when shifting to a shorter schedule."
+      ],
+      "audioFile": "sample.mp3",
+      "audioDownloadName": "five-hour-workday-episode.mp3",
+      "format": "Solo insight",
+      "releaseDate": "July 8, 2025",
+      "dateAdded": "2025-07-08"
+    },
+    {
+      "id": "systems-over-goals",
+      "title": "Systems Over Goals",
+      "episodeNumber": 11,
+      "length": "22 min",
+      "coverImage": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=1200&q=80",
+      "coverImageThumb": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80",
+      "description": "Why building routines beats chasing milestones every time.",
+      "summary": "We dive into the science of habits and why sustainable systems beat short-lived resolutions. Learn how to design routines that compound, gain traction, and keep you consistently shipping meaningful work.",
+      "highlights": [
+        "Building identity-based habits that make willpower optional.",
+        "The habit scorecard James uses to course-correct in minutes.",
+        "Levers for making habits obvious, attractive, easy, and satisfying."
+      ],
+      "audioFile": "sample.mp3",
+      "audioDownloadName": "systems-over-goals-episode.mp3",
+      "format": "Interview with James Clear",
+      "releaseDate": "June 24, 2025",
+      "dateAdded": "2025-06-24"
+    },
+    {
+      "id": "morning-momentum",
+      "title": "Morning Momentum",
+      "episodeNumber": 10,
+      "length": "15 min",
+      "coverImage": "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80",
+      "coverImageThumb": "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
+      "description": "Designing mornings that set the tone for intentional work.",
+      "summary": "Build an intentional morning flow that primes you for deep work. This guided walk-through helps you reset your mindset, move your body, and set a clear intention for the day ahead.",
+      "highlights": [
+        "A three-step journaling sequence that clarifies your priorities.",
+        "Micro-habits to transition smoothly from wake-up to focused work.",
+        "Breathing cues that reset when the day gets off track."
+      ],
+      "audioFile": "sample.mp3",
+      "audioDownloadName": "morning-momentum-episode.mp3",
+      "format": "Guided practice",
+      "releaseDate": "June 10, 2025",
+      "dateAdded": "2025-06-10"
+    }
+  ]
+}
+
+

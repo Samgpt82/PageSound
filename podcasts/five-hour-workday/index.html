@@ -16,41 +16,7 @@
     </nav>
 
     <main class="detail-main">
-        <a class="back-link" href="../../index.html#podcasts">← All podcast episodes</a>
-        <div class="detail-grid">
-            <div class="detail-cover">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="The 5-Hour Workday episode artwork">
-            </div>
-            <div class="detail-content">
-                <span class="pill">Episode 12</span>
-                <h1>The 5-Hour Workday</h1>
-                <div class="detail-meta">
-                    <span>Length: 18 minutes</span>
-                    <span>Format: Solo insight</span>
-                    <span>Released: July 8, 2025</span>
-                </div>
-                <p class="detail-description">
-                    Shorter workdays can unlock outsized productivity when teams commit to ruthless prioritization and shared focus rituals. This episode distills lessons from companies that ship more in five hours than most manage in eight.
-                </p>
-                <section>
-                    <h2>Episode highlights</h2>
-                    <ul>
-                        <li>The morning stand-up that aligns the entire team in 12 minutes.</li>
-                        <li>How to structure a condensed day around the highest-leverage tasks.</li>
-                        <li>What metrics to watch when shifting to a shorter schedule.</li>
-                    </ul>
-                </section>
-                <div class="detail-audio">
-                    <h2>Stream the episode</h2>
-                    <audio controls>
-                        <source src="sample.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <a class="text-link download-link" href="sample.mp3" download="five-hour-workday-episode.mp3">Download MP3</a>
-                    <p class="detail-audio-note">This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your mastered audio file.</p>
-                </div>
-            </div>
-        </div>
+        <!-- Content will be dynamically loaded here -->
     </main>
 
     <footer class="footer">
@@ -63,6 +29,7 @@
     </footer>
 
     <script src="../../scripts/download.js"></script>
+    <script src="../../scripts/render-podcasts.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>

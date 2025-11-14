@@ -23,34 +23,8 @@
         </header>
 
         <section class="section summaries">
-            <div class="card-grid">
-                <article class="summary-card">
-                    <a class="card-media" href="deep-work/index.html">
-                        <img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=900&q=80" alt="Deep Work book cover">
-                    </a>
-                    <span class="pill">Productivity</span>
-                    <h3><a href="deep-work/index.html" class="card-title">Deep Work</a></h3>
-                    <p>Cal Newport shows why focus is the superpower of the 21st century—and how to cultivate it.</p>
-                    <a href="deep-work/index.html" class="text-link">View summary & audio</a>
-                </article>
-                <article class="summary-card">
-                    <a class="card-media" href="dare-to-lead/index.html">
-                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80" alt="Dare to Lead book cover">
-                    </a>
-                    <span class="pill">Leadership</span>
-                    <h3><a href="dare-to-lead/index.html" class="card-title">Dare to Lead</a></h3>
-                    <p>Brené Brown explores vulnerability as the cornerstone of bold leadership.</p>
-                    <a href="dare-to-lead/index.html" class="text-link">View summary & audio</a>
-                </article>
-                <article class="summary-card">
-                    <a class="card-media" href="why-we-sleep/index.html">
-                        <img src="https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?auto=format&fit=crop&w=900&q=80" alt="Why We Sleep book cover">
-                    </a>
-                    <span class="pill">Wellness</span>
-                    <h3><a href="why-we-sleep/index.html" class="card-title">Why We Sleep</a></h3>
-                    <p>Matthew Walker on the science-backed benefits of prioritizing sleep.</p>
-                    <a href="why-we-sleep/index.html" class="text-link">View summary & audio</a>
-                </article>
+            <div class="card-grid" id="books-container">
+                <!-- Books will be dynamically loaded here -->
             </div>
         </section>
     </main>
@@ -65,8 +39,45 @@
         </div>
     </footer>
 
+    <script src="../scripts/render-books.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Load all books for listing page
+        async function loadAllBooks() {
+            try {
+                const response = await fetch('../data/books.json');
+                const data = await response.json();
+                const container = document.getElementById('books-container');
+                if (container) {
+                    // Sort books by dateAdded (newest first)
+                    const sortedBooks = [...data.books].sort((a, b) => {
+                        const dateA = new Date(a.dateAdded || a.releaseDate || 0);
+                        const dateB = new Date(b.dateAdded || b.releaseDate || 0);
+                        return dateB - dateA; // Newest first
+                    });
+                    
+                    sortedBooks.forEach(book => {
+                        const card = document.createElement('article');
+                        card.className = 'summary-card';
+                        card.innerHTML = `
+                            <a class="card-media" href="${book.id}/index.html">
+                                <img src="${book.coverImageThumb}" alt="${book.title} book cover">
+                            </a>
+                            <span class="pill">${book.category}</span>
+                            <h3><a href="${book.id}/index.html" class="card-title">${book.title}</a></h3>
+                            <p>${book.description}</p>
+                            <a href="${book.id}/index.html" class="text-link">View summary & audio</a>
+                        `;
+                        container.appendChild(card);
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading books:', error);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadAllBooks);
     </script>
 </body>
 </html>

@@ -23,34 +23,8 @@
         </header>
 
         <section class="section podcasts">
-            <div class="card-grid">
-                <article class="podcast-card">
-                    <a class="card-media" href="five-hour-workday/index.html">
-                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="The 5-Hour Workday cover art">
-                    </a>
-                    <div class="episode-meta">Episode 12 · 18 min</div>
-                    <h3><a href="five-hour-workday/index.html" class="card-title">The 5-Hour Workday</a></h3>
-                    <p>Lessons from the most efficient teams on keeping output high with fewer hours.</p>
-                    <a href="five-hour-workday/index.html" class="text-link">Listen to episode</a>
-                </article>
-                <article class="podcast-card">
-                    <a class="card-media" href="systems-over-goals/index.html">
-                        <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80" alt="Systems Over Goals cover art">
-                    </a>
-                    <div class="episode-meta">Episode 11 · 22 min</div>
-                    <h3><a href="systems-over-goals/index.html" class="card-title">Systems Over Goals</a></h3>
-                    <p>Why building routines beats chasing milestones every time.</p>
-                    <a href="systems-over-goals/index.html" class="text-link">Listen to episode</a>
-                </article>
-                <article class="podcast-card">
-                    <a class="card-media" href="morning-momentum/index.html">
-                        <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80" alt="Morning Momentum cover art">
-                    </a>
-                    <div class="episode-meta">Episode 10 · 15 min</div>
-                    <h3><a href="morning-momentum/index.html" class="card-title">Morning Momentum</a></h3>
-                    <p>Designing mornings that set the tone for intentional work.</p>
-                    <a href="morning-momentum/index.html" class="text-link">Listen to episode</a>
-                </article>
+            <div class="card-grid" id="podcasts-container">
+                <!-- Podcasts will be dynamically loaded here -->
             </div>
         </section>
     </main>
@@ -65,8 +39,45 @@
         </div>
     </footer>
 
+    <script src="../scripts/render-podcasts.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Load all podcasts for listing page
+        async function loadAllPodcasts() {
+            try {
+                const response = await fetch('../data/podcasts.json');
+                const data = await response.json();
+                const container = document.getElementById('podcasts-container');
+                if (container) {
+                    // Sort podcasts by dateAdded (newest first)
+                    const sortedPodcasts = [...data.podcasts].sort((a, b) => {
+                        const dateA = new Date(a.dateAdded || a.releaseDate || 0);
+                        const dateB = new Date(b.dateAdded || b.releaseDate || 0);
+                        return dateB - dateA; // Newest first
+                    });
+                    
+                    sortedPodcasts.forEach(podcast => {
+                        const card = document.createElement('article');
+                        card.className = 'podcast-card';
+                        card.innerHTML = `
+                            <a class="card-media" href="${podcast.id}/index.html">
+                                <img src="${podcast.coverImageThumb}" alt="${podcast.title} cover art">
+                            </a>
+                            <div class="episode-meta">Episode ${podcast.episodeNumber} · ${podcast.length}</div>
+                            <h3><a href="${podcast.id}/index.html" class="card-title">${podcast.title}</a></h3>
+                            <p>${podcast.description}</p>
+                            <a href="${podcast.id}/index.html" class="text-link">Listen to episode</a>
+                        `;
+                        container.appendChild(card);
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading podcasts:', error);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadAllPodcasts);
     </script>
 </body>
 </html>
