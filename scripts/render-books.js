@@ -91,7 +91,10 @@ function renderBookDetail(book) {
                         <source src="${book.audioFile}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <a class="text-link download-link" href="${book.audioFile}" download="${book.audioDownloadName}">Download MP3</a>
+                    <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a class="text-link download-link" href="${book.audioFile}" download="${book.audioDownloadName}">Download MP3</a>
+                        ${book.scriptFile ? `<a class="text-link" href="${book.scriptFile}" target="_blank">View script/transcript</a>` : ''}
+                    </div>
                     <p class="detail-audio-note">This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your recorded narration when ready.</p>
                 </div>
             </div>

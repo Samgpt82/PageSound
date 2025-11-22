@@ -84,7 +84,10 @@ function renderPodcastDetail(podcast) {
                         <source src="${podcast.audioFile}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <a class="text-link download-link" href="${podcast.audioFile}" download="${podcast.audioDownloadName}">Download MP3</a>
+                    <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <a class="text-link download-link" href="${podcast.audioFile}" download="${podcast.audioDownloadName}">Download MP3</a>
+                        ${podcast.scriptFile ? `<a class="text-link" href="${podcast.scriptFile}" target="_blank">View script/transcript</a>` : ''}
+                    </div>
                     <p class="detail-audio-note">This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your mastered audio file.</p>
                 </div>
             </div>

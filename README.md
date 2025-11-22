@@ -19,11 +19,14 @@ To add a new book, simply edit `data/books.json` and add a new entry:
   "keyTakeaways": ["Takeaway 1", "Takeaway 2", "Takeaway 3"],
   "audioFile": "path/to/audio.mp3",
   "audioDownloadName": "book-title-summary.mp3",
+  "scriptFile": "path/to/script.pdf",
   "releaseDate": "Month Year",
   "dateAdded": "YYYY-MM-DD",
   "summaryLength": "X words"
 }
 ```
+
+**Note:** `scriptFile` is optional. If provided, a "View script/transcript" link will appear next to the download link on the book detail page.
 
 Then create a folder: `books/[book-id]/` and copy `books/template.html` to `books/[book-id]/index.html`.
 
@@ -44,11 +47,14 @@ To add a new podcast, edit `data/podcasts.json` and add a new entry:
   "highlights": ["Highlight 1", "Highlight 2", "Highlight 3"],
   "audioFile": "path/to/audio.mp3",
   "audioDownloadName": "episode-title.mp3",
+  "scriptFile": "path/to/script.pdf",
   "format": "Format type",
   "releaseDate": "Month Day, Year",
   "dateAdded": "YYYY-MM-DD"
 }
 ```
+
+**Note:** `scriptFile` is optional. If provided, a "View script/transcript" link will appear next to the download link on the podcast detail page.
 
 Then create a folder: `podcasts/[podcast-id]/` and copy `podcasts/template.html` to `podcasts/[podcast-id]/index.html`.
 
