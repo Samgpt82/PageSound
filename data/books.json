@@ -1,5 +1,27 @@
 {
   "books": [
+        {
+      "id": "sapiens",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "category": "History",
+      "coverImage": "https://storage.googleapis.com/pagesound/images/Sapiens/cover.png",
+      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/Sapiens/cover.png",
+      "description": "Sapiens argues that the secret to humanity's rise lies in our unique ability to create and cooperate based on shared imagined realities (fictions) like money, nations, and religion.",
+      "summary": "Discover the monumental story of humanity in this summary of Yuval Noah Harari's international bestseller, Sapiens: A Brief History of Humankind. We track the journey of Homo sapiens from an inconsequential African ape 70,000 years ago to the planet's self-appointed ruler, focusing on the three great revolutions that defined our species. The video explains Harari's central thesis: our ability to create and believe in \"shared fictions\" (like money, nations, and religion) is what allowed us to cooperate flexibly on massive scales. Get a concise breakdown of the Cognitive Revolution, the impact of the Agricultural Revolution, and how the Scientific Revolution has put us on the path to becoming our own gods. This is a must-watch summary for anyone seeking a powerful, thought-provoking overview of where we came from and where we might be heading.",
+      "keyTakeaways": [
+        "The secret to human dominance is the ability to believe in and cooperate around shared imagined realities (fictions) like money, nations, and religion.",
+        "The Cognitive Revolution (70k years ago) enabled flexible language and the creation of these powerful shared myths.",
+        "The Agricultural Revolution was 'history's biggest fraud,' trapping humans in a tougher, less healthy existence focused on protecting resources.",
+        "Money, empires, and universal religions were the key forces that broke down local barriers and gradually unified humanity into a single global civilization.",
+        "The Scientific Revolution is leading to a future where we may use biotechnology and AI to fundamentally redesign the human species itself (becoming 'gods')."
+      ],
+      "audioFile": "https://storage.googleapis.com/pagesound/images/Sapiens/episode1.mp3",
+      "audioDownloadName": "Sapiens_part1.mp3",
+      "releaseDate": "2011",
+      "dateAdded": "2025-11-23",
+      "summaryLength": "-"
+    },
 {
       "id": "shallow-thinking",
       "title": "shallow thinking",
