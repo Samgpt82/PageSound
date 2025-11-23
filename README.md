@@ -26,7 +26,35 @@ To add a new book, simply edit `data/books.json` and add a new entry:
 }
 ```
 
-**Note:** `scriptFile` is optional. If provided, a "View script/transcript" link will appear next to the download link on the book detail page.
+**For multiple audio files (Parts 1, 2, 3, etc.), use `audioFiles` array instead of `audioFile`:**
+
+```json
+{
+  "id": "book-slug",
+  "title": "Book Title",
+  ...
+  "audioFiles": [
+    {
+      "file": "path/to/part1.mp3",
+      "downloadName": "book-title-part1.mp3",
+      "label": "Introduction",
+      "scriptFile": "path/to/part1-script.pdf"
+    },
+    {
+      "file": "path/to/part2.mp3",
+      "downloadName": "book-title-part2.mp3",
+      "label": "Main Concepts"
+    }
+  ],
+  ...
+}
+```
+
+**Notes:**
+- Use either `audioFile` (single file) OR `audioFiles` (multiple parts), not both
+- `scriptFile` is optional. If provided, a "View script/transcript" link will appear
+- In `audioFiles` array, `label` and `scriptFile` are optional for each part
+- If `audioFiles` is used, each part will display as "Part 1", "Part 2", etc.
 
 Then create a folder: `books/[book-id]/` and copy `books/template.html` to `books/[book-id]/index.html`.
 
@@ -54,7 +82,35 @@ To add a new podcast, edit `data/podcasts.json` and add a new entry:
 }
 ```
 
-**Note:** `scriptFile` is optional. If provided, a "View script/transcript" link will appear next to the download link on the podcast detail page.
+**For multiple audio files (Parts 1, 2, 3, etc.), use `audioFiles` array instead of `audioFile`:**
+
+```json
+{
+  "id": "podcast-slug",
+  "title": "Episode Title",
+  ...
+  "audioFiles": [
+    {
+      "file": "path/to/part1.mp3",
+      "downloadName": "episode-part1.mp3",
+      "label": "Introduction",
+      "scriptFile": "path/to/part1-script.pdf"
+    },
+    {
+      "file": "path/to/part2.mp3",
+      "downloadName": "episode-part2.mp3",
+      "label": "Main Discussion"
+    }
+  ],
+  ...
+}
+```
+
+**Notes:**
+- Use either `audioFile` (single file) OR `audioFiles` (multiple parts), not both
+- `scriptFile` is optional. If provided, a "View script/transcript" link will appear
+- In `audioFiles` array, `label` and `scriptFile` are optional for each part
+- If `audioFiles` is used, each part will display as "Part 1", "Part 2", etc.
 
 Then create a folder: `podcasts/[podcast-id]/` and copy `podcasts/template.html` to `podcasts/[podcast-id]/index.html`.
 

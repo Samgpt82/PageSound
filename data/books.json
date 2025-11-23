@@ -1,26 +1,24 @@
 {
   "books": [
-    {
-      "id": "sapiens",
-      "title": "Sapiens: A Brief History of Humankind",
-      "author": "Yuval Noah Harari",
-      "category": "History",
-      "coverImage": "https://storage.googleapis.com/pagesound/images/Sapiens/cover.png",
-      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/Sapiens/cover.png",
-      "description": "Sapiens argues that the secret to humanity's rise lies in our unique ability to create and cooperate based on shared imagined realities (fictions) like money, nations, and religion.",
-      "summary": "Discover the monumental story of humanity in this summary of Yuval Noah Harari's international bestseller, Sapiens: A Brief History of Humankind. We track the journey of Homo sapiens from an inconsequential African ape 70,000 years ago to the planet's self-appointed ruler, focusing on the three great revolutions that defined our species. The video explains Harari's central thesis: our ability to create and believe in \"shared fictions\" (like money, nations, and religion) is what allowed us to cooperate flexibly on massive scales. Get a concise breakdown of the Cognitive Revolution, the impact of the Agricultural Revolution, and how the Scientific Revolution has put us on the path to becoming our own gods. This is a must-watch summary for anyone seeking a powerful, thought-provoking overview of where we came from and where we might be heading.",
+{
+      "id": "shallow-thinking",
+      "title": "shallow thinking",
+      "author": "NIk Newport",
+      "category": "Productivity",
+      "coverImage": "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=1200&q=80",
+      "coverImageThumb": "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=900&q=80",
+      "description": "Cal Newport shows why focus is the superpower of the 21st century—and how to cultivate it.",
+      "summary": "Deep jfkjdfjkdsfhbjsdf Work is a guide to cultivating the rare ability to focus without distraction on cognitively demanding tasks. Newport argues that embracing depth rather than shallow multitasking is the key to producing better work in less time, while unlocking creative breakthroughs.",
       "keyTakeaways": [
-        "The secret to human dominance is the ability to believe in and cooperate around shared imagined realities (fictions) like money, nations, and religion.",
-        "The Cognitive Revolution (70k years ago) enabled flexible language and the creation of these powerful shared myths.",
-        "The Agricultural Revolution was 'history's biggest fraud,' trapping humans in a tougher, less healthy existence focused on protecting resources.",
-        "Money, empires, and universal religions were the key forces that broke down local barriers and gradually unified humanity into a single global civilization.",
-        "The Scientific Revolution is leading to a future where we may use biotechnology and AI to fundamentally redesign the human species itself (becoming 'gods')."
+        "Schedule stretches of focused time and protect them like immovable meetings.",
+        "Eliminate digital distractions and engineer a ritual that signals it's time to go deep.",
+        "Prioritize high-value, meaningful work and ruthlessly minimize low-impact tasks."
       ],
-      "audioFile": "https://storage.googleapis.com/pagesound/images/Sapiens/episode1.mp3",
-      "audioDownloadName": "Sapiens_part1.mp3",
-      "releaseDate": "2011",
-      "dateAdded": "2025-11-23",
-      "summaryLength": "-"
+      "audioFile": "https://files.catbox.moe/4abc2w.mp3",
+      "audioDownloadName": "deep-work-summary.mp3",
+      "releaseDate": "January 2016",
+      "dateAdded": "2025-08-15",
+      "summaryLength": "1,100 words"
     },
     {
       "id": "deep-work",
@@ -85,3 +83,5 @@
     }
   ]
 }
+
+

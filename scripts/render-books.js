@@ -87,15 +87,34 @@ function renderBookDetail(book) {
                 </section>
                 <div class="detail-audio">
                     <h2>Listen to the audio summary</h2>
-                    <audio controls>
-                        <source src="${book.audioFile}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a class="text-link download-link" href="${book.audioFile}" download="${book.audioDownloadName}">Download MP3</a>
-                        ${book.scriptFile ? `<a class="text-link" href="${book.scriptFile}" target="_blank">View script/transcript</a>` : ''}
-                    </div>
-                    <p class="detail-audio-note">This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your recorded narration when ready.</p>
+                    ${book.audioFiles && book.audioFiles.length > 0 ? 
+                        // Multiple audio files
+                        book.audioFiles.map((audio, index) => `
+                            <div style="margin-bottom: 2rem;">
+                                <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">Part ${index + 1}${audio.label ? `: ${audio.label}` : ''}</h3>
+                                <audio controls style="width: 100%; margin-bottom: 0.5rem;">
+                                    <source src="${audio.file}" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                                    <a class="text-link download-link" href="${audio.file}" download="${audio.downloadName || `part${index + 1}.mp3`}">Download Part ${index + 1}</a>
+                                    ${audio.scriptFile ? `<a class="text-link" href="${audio.scriptFile}" target="_blank">View script Part ${index + 1}</a>` : ''}
+                                </div>
+                            </div>
+                        `).join('') :
+                        // Single audio file (backward compatibility)
+                        `
+                            <audio controls>
+                                <source src="${book.audioFile}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                                <a class="text-link download-link" href="${book.audioFile}" download="${book.audioDownloadName}">Download MP3</a>
+                                ${book.scriptFile ? `<a class="text-link" href="${book.scriptFile}" target="_blank">View script/transcript</a>` : ''}
+                            </div>
+                        `
+                    }
+                    <p class="detail-audio-note" style="margin-top: 1rem;">${book.audioFiles && book.audioFiles.length > 0 ? 'Multiple parts available. Listen to each part in order.' : 'This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your recorded narration when ready.'}</p>
                 </div>
             </div>
         </div>

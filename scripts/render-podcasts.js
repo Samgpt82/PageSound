@@ -80,15 +80,34 @@ function renderPodcastDetail(podcast) {
                 </section>
                 <div class="detail-audio">
                     <h2>Stream the episode</h2>
-                    <audio controls>
-                        <source src="${podcast.audioFile}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                        <a class="text-link download-link" href="${podcast.audioFile}" download="${podcast.audioDownloadName}">Download MP3</a>
-                        ${podcast.scriptFile ? `<a class="text-link" href="${podcast.scriptFile}" target="_blank">View script/transcript</a>` : ''}
-                    </div>
-                    <p class="detail-audio-note">This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your mastered audio file.</p>
+                    ${podcast.audioFiles && podcast.audioFiles.length > 0 ? 
+                        // Multiple audio files
+                        podcast.audioFiles.map((audio, index) => `
+                            <div style="margin-bottom: 2rem;">
+                                <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">Part ${index + 1}${audio.label ? `: ${audio.label}` : ''}</h3>
+                                <audio controls style="width: 100%; margin-bottom: 0.5rem;">
+                                    <source src="${audio.file}" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                                    <a class="text-link download-link" href="${audio.file}" download="${audio.downloadName || `part${index + 1}.mp3`}">Download Part ${index + 1}</a>
+                                    ${audio.scriptFile ? `<a class="text-link" href="${audio.scriptFile}" target="_blank">View script Part ${index + 1}</a>` : ''}
+                                </div>
+                            </div>
+                        `).join('') :
+                        // Single audio file (backward compatibility)
+                        `
+                            <audio controls>
+                                <source src="${podcast.audioFile}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                                <a class="text-link download-link" href="${podcast.audioFile}" download="${podcast.audioDownloadName}">Download MP3</a>
+                                ${podcast.scriptFile ? `<a class="text-link" href="${podcast.scriptFile}" target="_blank">View script/transcript</a>` : ''}
+                            </div>
+                        `
+                    }
+                    <p class="detail-audio-note" style="margin-top: 1rem;">${podcast.audioFiles && podcast.audioFiles.length > 0 ? 'Multiple parts available. Listen to each part in order.' : 'This is a 1-second placeholder file. Replace <code>sample.mp3</code> with your mastered audio file.'}</p>
                 </div>
             </div>
         </div>
