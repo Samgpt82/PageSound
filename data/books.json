@@ -1,5 +1,42 @@
 {
   "books": [
+{
+      "id": "elonmusk",
+      "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+      "author": "Ashlee Vance",
+      "category": "Biography",
+      "coverImage": "https://storage.googleapis.com/pagesound/images/elonmusk/cover.png",
+      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/elonmusk/cover.png",
+      "description": "This audio summary explores the extraordinary life of Elon Musk, one of the boldest and most influential entrepreneurs of our time, whose impact spans Tesla, SpaceX, PayPal, and SolarCity. Based on journalist Ashlee Vance’s acclaimed biography, it follows Musk’s journey from a difficult childhood in South Africa to his rise as a global technology visionary. With rare access to Musk, his family, and his colleagues, Vance reveals the ambition, setbacks, and relentless drive behind the man reshaping electric cars, private space travel, and renewable energy. The summary covers his early struggles and move to North America, the creation and loss of PayPal, the near-failures of Tesla and SpaceX, personal tragedies that influenced his character, his willingness to risk everything on rockets and electric vehicles, and the remarkable comeback that turned his companies into industry leaders. Ultimately, it captures the intensity, contradictions, and vision of a complex innovator who continues to push technological boundaries and revive bold innovation in the 21st century.",
+      "summary": "This audio summary explores Elon Musk’s extraordinary journey from a difficult childhood in South Africa to becoming a global innovator behind Tesla, SpaceX, PayPal, and SolarCity, highlighting his ambition, setbacks, resilience, and impact on 21st-century technology and bold innovation.",
+      "keyTakeaways": [
+  "Relentless ambition and a willingness to take extreme risks enabled Musk to push into industries most considered impossible to change.",
+  "A strong belief in engineering-first problem solving drives his approach to electric vehicles, rockets, and renewable energy.",
+  "Failure is treated as a necessary part of progress, with Musk repeatedly rebuilding after setbacks at PayPal, Tesla, and SpaceX.",
+  "Musk’s companies share a common mission: accelerating humanity’s technological future and reducing long-term existential risks.",
+  "Personal hardship and early challenges shaped Musk’s resilience and refusal to give up, even in near-bankruptcy moments.",
+  "Musk’s story demonstrates how bold vision, endurance, and rapid iteration can reshape entire industries."
+   ],
+      "audioFiles": [
+        {
+          "file": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep1.mp3",
+          "downloadName": "elonmusk-part1.mp3",
+          "label": "elonmusk-part1",
+          "scriptFile": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep1.txt"
+        },
+        {
+          "file": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep2.mp3",
+          "downloadName": "elonmusk-part2.mp3",
+          "label": "elonmusk-part2",
+          "scriptFile": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep2.txt"
+        }
+      ],
+      "releaseDate": "2017",
+      "dateAdded": "2025-11-26",
+      "summaryLength": "-"
+    },
+
+
     {
       "id": "sapiens",
       "title": "Sapiens: A Brief History of Humankind",
