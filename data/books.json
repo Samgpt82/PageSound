@@ -1,34 +1,33 @@
 {
   "books": [
-{
+    {
       "id": "guns-germs-and-steel",
       "title": "Why Civilizations Rose and Fell — Guns, Germs & Steel",
       "author": "Jared Diamond",
       "category": "History",
       "coverImage": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/cover.png",
-      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/elonmusk/cover.png",
-      "description": "Jared Diamond’s idea from his book Guns, Germs, and Steel is that geography, environment, and biology—not race or culture—explain why some civilizations advanced faster than others. His theory shows how factors like domesticated animals, crop availability, continental orientation, disease immunity, and technological diffusion created early advantages that shaped the rise of powerful empires and modern global inequalities. This concise explanation highlights one of the most influential frameworks for understanding the fate of human societies.
-",
-      "summary": "Jared Diamond’s Guns, Germs, and Steel, explains how geography, agriculture, and disease shaped the rise of civilizations. Discover why some societies advanced faster than others and how environmental factors influenced the course of human history.",
+      "coverImageThumb": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/cover.png",
+      "description": "Jared Diamond’s idea from his book Guns, Germs, and Steel is that geography, environment, and biology—not race or culture—explain why some civilizations advanced faster than others. His theory shows how factors like domesticated animals, crop availability, continental orientation, disease immunity, and technological diffusion created early advantages that shaped the rise of powerful empires and modern global inequalities. This concise explanation highlights one of the most influential frameworks for understanding the fate of human societies.",
+      "summary": "Jared Diamond’s Guns, Germs, and Steel explains how geography, agriculture, and disease shaped the rise of civilizations. Discover why some societies advanced faster than others and how environmental factors influenced the course of human history.",
       "keyTakeaways": [
-  "Geography, not racial or cultural differences, played the central role in determining why some civilizations advanced faster than others.",
-  "Access to domesticable plants and animals enabled early food surpluses, population growth, and technological development.",
-  "Continental orientation influenced how easily crops, animals, and technologies spread across regions, shaping uneven development.",
-  "Epidemic diseases emerged in dense, agrarian societies and later provided immunity advantages during global encounters.",
-  "Technological diffusion favored interconnected regions, allowing ideas and innovations to spread more rapidly.",
-  "Environmental luck created long-term advantages that shaped global power structures and the rise of empires."
-],
+        "Geography, not racial or cultural differences, played the central role in determining why some civilizations advanced faster than others.",
+        "Access to domesticable plants and animals enabled early food surpluses, population growth, and technological development.",
+        "Continental orientation influenced how easily crops, animals, and technologies spread across regions, shaping uneven development.",
+        "Epidemic diseases emerged in dense, agrarian societies and later provided immunity advantages during global encounters.",
+        "Technological diffusion favored interconnected regions, allowing ideas and innovations to spread more rapidly.",
+        "Environmental luck created long-term advantages that shaped global power structures and the rise of empires."
+      ],
       "audioFiles": [
         {
           "file": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep1.mp3",
-          "downloadName": "elonmusk-part1.mp3",
-          "label": "elonmusk-part1",
+          "downloadName": "guns-germs-and-steel-part1.mp3",
+          "label": "guns-germs-and-steel-part1",
           "scriptFile": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep1.txt"
         },
         {
           "file": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep2.mp3",
-          "downloadName": "elonmusk-part2.mp3",
-          "label": "elonmusk-part2",
+          "downloadName": "guns-germs-and-steel-part2.mp3",
+          "label": "guns-germs-and-steel-part2",
           "scriptFile": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep2.txt"
         }
       ],
@@ -36,10 +35,7 @@
       "dateAdded": "2025-11-26",
       "summaryLength": "-"
     },
-
-
-
-{
+    {
       "id": "elonmusk",
       "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
       "author": "Ashlee Vance",
@@ -49,13 +45,13 @@
       "description": "This audio summary traces Elon Musk’s journey from a difficult childhood in South Africa to becoming the visionary behind Tesla, SpaceX, PayPal, and SolarCity. Based on Ashlee Vance’s biography, it highlights Musk’s ambition, failures, personal struggles, and the dramatic turnarounds that transformed his companies into industry leaders, showcasing the relentless drive that continues to push the boundaries of 21st-century innovation.",
       "summary": "This audio summary explores Elon Musk’s extraordinary journey from a difficult childhood in South Africa to becoming a global innovator behind Tesla, SpaceX, PayPal, and SolarCity, highlighting his ambition, setbacks, resilience, and impact on 21st-century technology and bold innovation.",
       "keyTakeaways": [
-  "Relentless ambition and a willingness to take extreme risks enabled Musk to push into industries most considered impossible to change.",
-  "A strong belief in engineering-first problem solving drives his approach to electric vehicles, rockets, and renewable energy.",
-  "Failure is treated as a necessary part of progress, with Musk repeatedly rebuilding after setbacks at PayPal, Tesla, and SpaceX.",
-  "Musk’s companies share a common mission: accelerating humanity’s technological future and reducing long-term existential risks.",
-  "Personal hardship and early challenges shaped Musk’s resilience and refusal to give up, even in near-bankruptcy moments.",
-  "Musk’s story demonstrates how bold vision, endurance, and rapid iteration can reshape entire industries."
-   ],
+        "Relentless ambition and a willingness to take extreme risks enabled Musk to push into industries most considered impossible to change.",
+        "A strong belief in engineering-first problem solving drives his approach to electric vehicles, rockets, and renewable energy.",
+        "Failure is treated as a necessary part of progress, with Musk repeatedly rebuilding after setbacks at PayPal, Tesla, and SpaceX.",
+        "Musk’s companies share a common mission: accelerating humanity’s technological future and reducing long-term existential risks.",
+        "Personal hardship and early challenges shaped Musk’s resilience and refusal to give up, even in near-bankruptcy moments.",
+        "Musk’s story demonstrates how bold vision, endurance, and rapid iteration can reshape entire industries."
+      ],
       "audioFiles": [
         {
           "file": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep1.mp3",
@@ -74,8 +70,6 @@
       "dateAdded": "2025-11-26",
       "summaryLength": "-"
     },
-
-
     {
       "id": "sapiens",
       "title": "Sapiens: A Brief History of Humankind",
