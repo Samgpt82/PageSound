@@ -1,24 +1,114 @@
 {
   "books": [
 {
-      "id": "shallow-thinking",
-      "title": "shallow thinking",
-      "author": "NIk Newport",
-      "category": "Productivity",
-      "coverImage": "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=1200&q=80",
-      "coverImageThumb": "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=900&q=80",
-      "description": "Cal Newport shows why focus is the superpower of the 21st century—and how to cultivate it.",
-      "summary": "Deep jfkjdfjkdsfhbjsdf Work is a guide to cultivating the rare ability to focus without distraction on cognitively demanding tasks. Newport argues that embracing depth rather than shallow multitasking is the key to producing better work in less time, while unlocking creative breakthroughs.",
+      "id": "guns-germs-and-steel",
+      "title": "Why Civilizations Rose and Fell — Guns, Germs & Steel",
+      "author": "Jared Diamond",
+      "category": "History",
+      "coverImage": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/cover.png",
+      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/elonmusk/cover.png",
+      "description": "Jared Diamond’s idea from his book Guns, Germs, and Steel is that geography, environment, and biology—not race or culture—explain why some civilizations advanced faster than others. His theory shows how factors like domesticated animals, crop availability, continental orientation, disease immunity, and technological diffusion created early advantages that shaped the rise of powerful empires and modern global inequalities. This concise explanation highlights one of the most influential frameworks for understanding the fate of human societies.
+",
+      "summary": "Jared Diamond’s Guns, Germs, and Steel, explains how geography, agriculture, and disease shaped the rise of civilizations. Discover why some societies advanced faster than others and how environmental factors influenced the course of human history.",
       "keyTakeaways": [
-        "Schedule stretches of focused time and protect them like immovable meetings.",
-        "Eliminate digital distractions and engineer a ritual that signals it's time to go deep.",
-        "Prioritize high-value, meaningful work and ruthlessly minimize low-impact tasks."
+  "Geography, not racial or cultural differences, played the central role in determining why some civilizations advanced faster than others.",
+  "Access to domesticable plants and animals enabled early food surpluses, population growth, and technological development.",
+  "Continental orientation influenced how easily crops, animals, and technologies spread across regions, shaping uneven development.",
+  "Epidemic diseases emerged in dense, agrarian societies and later provided immunity advantages during global encounters.",
+  "Technological diffusion favored interconnected regions, allowing ideas and innovations to spread more rapidly.",
+  "Environmental luck created long-term advantages that shaped global power structures and the rise of empires."
+],
+      "audioFiles": [
+        {
+          "file": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep1.mp3",
+          "downloadName": "elonmusk-part1.mp3",
+          "label": "elonmusk-part1",
+          "scriptFile": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep1.txt"
+        },
+        {
+          "file": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep2.mp3",
+          "downloadName": "elonmusk-part2.mp3",
+          "label": "elonmusk-part2",
+          "scriptFile": "https://storage.googleapis.com/pagesoundwww/books/guns-germs-and-steel/ep2.txt"
+        }
       ],
-      "audioFile": "https://files.catbox.moe/4abc2w.mp3",
-      "audioDownloadName": "deep-work-summary.mp3",
-      "releaseDate": "January 2016",
-      "dateAdded": "2025-08-15",
-      "summaryLength": "1,100 words"
+      "releaseDate": "2017",
+      "dateAdded": "2025-11-26",
+      "summaryLength": "-"
+    },
+
+
+
+{
+      "id": "elonmusk",
+      "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+      "author": "Ashlee Vance",
+      "category": "Biography",
+      "coverImage": "https://storage.googleapis.com/pagesound/images/elonmusk/cover.png",
+      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/elonmusk/cover.png",
+      "description": "This audio summary traces Elon Musk’s journey from a difficult childhood in South Africa to becoming the visionary behind Tesla, SpaceX, PayPal, and SolarCity. Based on Ashlee Vance’s biography, it highlights Musk’s ambition, failures, personal struggles, and the dramatic turnarounds that transformed his companies into industry leaders, showcasing the relentless drive that continues to push the boundaries of 21st-century innovation.",
+      "summary": "This audio summary explores Elon Musk’s extraordinary journey from a difficult childhood in South Africa to becoming a global innovator behind Tesla, SpaceX, PayPal, and SolarCity, highlighting his ambition, setbacks, resilience, and impact on 21st-century technology and bold innovation.",
+      "keyTakeaways": [
+  "Relentless ambition and a willingness to take extreme risks enabled Musk to push into industries most considered impossible to change.",
+  "A strong belief in engineering-first problem solving drives his approach to electric vehicles, rockets, and renewable energy.",
+  "Failure is treated as a necessary part of progress, with Musk repeatedly rebuilding after setbacks at PayPal, Tesla, and SpaceX.",
+  "Musk’s companies share a common mission: accelerating humanity’s technological future and reducing long-term existential risks.",
+  "Personal hardship and early challenges shaped Musk’s resilience and refusal to give up, even in near-bankruptcy moments.",
+  "Musk’s story demonstrates how bold vision, endurance, and rapid iteration can reshape entire industries."
+   ],
+      "audioFiles": [
+        {
+          "file": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep1.mp3",
+          "downloadName": "elonmusk-part1.mp3",
+          "label": "elonmusk-part1",
+          "scriptFile": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep1.txt"
+        },
+        {
+          "file": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep2.mp3",
+          "downloadName": "elonmusk-part2.mp3",
+          "label": "elonmusk-part2",
+          "scriptFile": "https://storage.googleapis.com/pagesound/images/elonmusk/elonmusk_ep2.txt"
+        }
+      ],
+      "releaseDate": "2017",
+      "dateAdded": "2025-11-26",
+      "summaryLength": "-"
+    },
+
+
+    {
+      "id": "sapiens",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "category": "History",
+      "coverImage": "https://storage.googleapis.com/pagesound/images/Sapiens/cover.png",
+      "coverImageThumb": "https://storage.googleapis.com/pagesound/images/Sapiens/cover.png",
+      "description": "Sapiens argues that the secret to humanity's rise lies in our unique ability to create and cooperate based on shared imagined realities (fictions) like money, nations, and religion.",
+      "summary": "Discover the monumental story of humanity in this summary of Yuval Noah Harari's international bestseller...",
+      "keyTakeaways": [
+        "The secret to human dominance is the ability to believe in and cooperate around shared imagined realities...",
+        "The Cognitive Revolution (70k years ago) enabled flexible language...",
+        "The Agricultural Revolution was 'history's biggest fraud'...",
+        "Money, empires, and universal religions unified humanity...",
+        "The Scientific Revolution may allow us to redesign our species."
+      ],
+      "audioFiles": [
+        {
+          "file": "https://storage.googleapis.com/pagesound/images/Sapiens/episode1.mp3",
+          "downloadName": "sapiens-part1.mp3",
+          "label": "sapiens-part1",
+          "scriptFile": "https://storage.googleapis.com/pagesound/images/Sapiens/sapien_script_ep1.txt"
+        },
+        {
+          "file": "https://storage.googleapis.com/pagesound/images/Sapiens/episode2.mp3",
+          "downloadName": "sapiens-part2.mp3",
+          "label": "sapiens-part2",
+          "scriptFile": "https://storage.googleapis.com/pagesound/images/Sapiens/sapien_script_ep2.txt"
+        }
+      ],
+      "releaseDate": "2011",
+      "dateAdded": "2025-11-23",
+      "summaryLength": "-"
     },
     {
       "id": "deep-work",
@@ -28,11 +118,11 @@
       "coverImage": "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=1200&q=80",
       "coverImageThumb": "https://images.unsplash.com/photo-1491841573634-28140fc7ced7?auto=format&fit=crop&w=900&q=80",
       "description": "Cal Newport shows why focus is the superpower of the 21st century—and how to cultivate it.",
-      "summary": "Deep Work is a guide to cultivating the rare ability to focus without distraction on cognitively demanding tasks. Newport argues that embracing depth rather than shallow multitasking is the key to producing better work in less time, while unlocking creative breakthroughs.",
+      "summary": "Deep Work is a guide to cultivating the rare ability to focus without distraction...",
       "keyTakeaways": [
-        "Schedule stretches of focused time and protect them like immovable meetings.",
-        "Eliminate digital distractions and engineer a ritual that signals it's time to go deep.",
-        "Prioritize high-value, meaningful work and ruthlessly minimize low-impact tasks."
+        "Schedule stretches of focused time...",
+        "Eliminate digital distractions...",
+        "Prioritize high-value work."
       ],
       "audioFile": "https://files.catbox.moe/4abc2w.mp3",
       "audioDownloadName": "deep-work-summary.mp3",
@@ -49,11 +139,11 @@
       "coverImage": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
       "coverImageThumb": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80",
       "description": "Brené Brown explores vulnerability as the cornerstone of bold leadership.",
-      "summary": "Brené Brown argues that courageous leadership grows from vulnerability, empathy, and meaningful connection. By choosing courage over comfort, teams create cultures where hard conversations happen and new ideas are safe to explore.",
+      "summary": "Brené Brown argues that courageous leadership grows from vulnerability...",
       "keyTakeaways": [
-        "Vulnerability is not weakness—it is the birthplace of innovation and trust.",
-        "Clear is kind. Give direct feedback anchored in shared values.",
-        "Leaders go first in modeling empathy, curiosity, and accountability."
+        "Vulnerability is not weakness.",
+        "Clear is kind.",
+        "Leaders go first in empathy."
       ],
       "audioFile": "sample.mp3",
       "audioDownloadName": "dare-to-lead-summary.mp3",
@@ -69,11 +159,11 @@
       "coverImage": "https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?auto=format&fit=crop&w=1200&q=80",
       "coverImageThumb": "https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?auto=format&fit=crop&w=900&q=80",
       "description": "Matthew Walker on the science-backed benefits of prioritizing sleep.",
-      "summary": "Neuroscientist Matthew Walker makes the case for sleep as the single most effective step we can take toward improved health, productivity, and longevity. Optimizing sleep unlocks learning, creativity, immune support, and emotional balance.",
+      "summary": "Neuroscientist Matthew Walker makes the case for sleep as the single most effective step...",
       "keyTakeaways": [
-        "Treat seven to nine hours as a non-negotiable upgrade to every system in your body.",
-        "Consistency matters: hold a steady sleep and wake time—even on weekends.",
-        "Create a wind-down routine and sleep environment that keeps light, temperature, and caffeine in check."
+        "Treat 7–9 hours as non-negotiable.",
+        "Consistency matters.",
+        "Control light, temperature, caffeine."
       ],
       "audioFile": "sample.mp3",
       "audioDownloadName": "why-we-sleep-summary.mp3",
@@ -83,5 +173,3 @@
     }
   ]
 }
-
-
